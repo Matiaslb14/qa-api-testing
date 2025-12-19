@@ -8,6 +8,10 @@ __pycache__/
 # Pytest
 .pytest_cache/
 
+# Reportes de testing
+report.html
+reports/
+
 # Variables de entorno
 .env
 
