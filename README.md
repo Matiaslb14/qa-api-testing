@@ -8,7 +8,7 @@ Se realizan pruebas automatizadas sobre distintos endpoints para verificar respu
 - Consumo de endpoints REST
 - Respuestas exitosas (GET)
 - Validación de estructura y tipos de datos del JSON
-- Manejo de errores ante endpoints inexistentes
+- Manejo de errores y escenarios negativos (endpoint inexistente)
 - Creación de recursos mediante método POST
 
 ## 🛠 Stack Tecnológico
@@ -53,7 +53,7 @@ pytest
 ## ✅ Escenarios automatizados
 - Obtención exitosa de la lista de usuarios (GET)
 - Validación de estructura y tipos de datos del usuario
-- Respuesta 404 ante endpoint inexistente
+- Escenario negativo: respuesta 404 ante endpoint inexistente
 - Creación de usuario mediante POST y validación de la respuesta
 
 ## 📝 Notas de QA
