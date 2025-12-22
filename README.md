@@ -1,15 +1,25 @@
 # QA API Testing – Pytest + Requests
 
 ## 📌 Descripción
-Proyecto de QA Automation enfocado en la validación de una API REST utilizando Pytest y Requests.  
-Se realizan pruebas automatizadas sobre distintos endpoints para verificar respuestas exitosas, manejo de errores y consistencia de los datos retornados por la API.
+Proyecto de **QA Automation enfocado en la validación de una API REST** utilizando **Pytest** y **Requests**.  
+El objetivo es automatizar pruebas sobre distintos endpoints para verificar respuestas exitosas, manejo de errores y consistencia de los datos retornados por la API, aplicando fundamentos de testing de APIs utilizados en escenarios reales.
+
+Se utiliza una **API pública (JSONPlaceholder)** para simular un entorno de pruebas sin dependencias externas.
+
+## ⭐ Características / Features Clave
+- Automatización de pruebas de APIs REST con Pytest
+- Validación de códigos de estado HTTP
+- Validación de estructura y tipos de datos del JSON
+- Manejo de escenarios positivos y negativos
+- Pruebas de creación de recursos mediante método POST
+- Proyecto orientado a fundamentos de QA Automation en APIs
 
 ## 🧪 Qué se está probando
 - Consumo de endpoints REST
-- Respuestas exitosas (GET)
+- Respuestas exitosas (`GET`)
 - Validación de estructura y tipos de datos del JSON
-- Manejo de errores y escenarios negativos (endpoint inexistente)
-- Creación de recursos mediante método POST
+- Manejo de errores ante endpoints inexistentes (`404`)
+- Creación de recursos mediante método `POST`
 
 ## 🛠 Stack Tecnológico
 - Python
@@ -18,23 +28,17 @@ Se realizan pruebas automatizadas sobre distintos endpoints para verificar respu
 - API pública JSONPlaceholder
 
 ## 📂 Estructura del Proyecto
-```
+```text
 qa-api-testing/
 ├── tests/
-│ └── test_users_get.py
+│  └── test_users_get.py
 ├── pytest.ini
 ├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
-
-- `tests/`: contiene los tests automatizados
-- `pytest.ini`: configuración global de Pytest
-- `requirements.txt`: dependencias del proyecto
-- `.gitignore`: archivos y carpetas ignoradas por Git
-
-## ▶️ Cómo ejecutar el proyecto
-```powershell
+``` powershell 
+▶️ Cómo ejecutar el proyecto
 # Clonar el repositorio e ingresar al proyecto
 git clone https://github.com/Matiaslb14/qa-api-testing.git
 cd qa-api-testing
@@ -49,20 +53,23 @@ pip install -r requirements.txt
 # Ejecutar los tests
 pytest
 ```
-
 ## ✅ Escenarios automatizados
 - Obtención exitosa de la lista de usuarios (GET)
 - Validación de estructura y tipos de datos del usuario
-- Escenario negativo: respuesta 404 ante endpoint inexistente
+- Respuesta 404 ante endpoint inexistente
 - Creación de usuario mediante POST y validación de la respuesta
 
-## 📝 Notas de QA
-- Se validan tanto códigos de estado como el contenido de la respuesta
-- Los tests están diseñados para ser simples, legibles y mantenibles
-- La API utilizada simula la creación de recursos, por lo que los datos no se persisten realmente
-- El proyecto está orientado a demostrar fundamentos de QA Automation aplicables a APIs reales
+## 🧠 Decisiones técnicas
+- Se utiliza JSONPlaceholder como API pública para simular un entorno real de pruebas.
+- Se validan tanto códigos de estado HTTP como el contenido de las respuestas.
+- Los tests están diseñados para ser simples, legibles y fáciles de mantener.
+- La API simula la creación de recursos, por lo que los datos no se persisten realmente, comportamiento documentado como parte del testing.
 
-## 📈 Mejoras futuras
+📊 Reportes / Evidencia (cuando aplique)
+- La ejecución de los tests se valida mediante la salida estándar de Pytest.
+- No se incluyen evidencias visuales al tratarse de un proyecto de fundamentos de testing de APIs.
+
+📈 Mejoras futuras
 - Agregar validaciones más profundas del contrato de la API
 - Separar tests por endpoint o funcionalidad
 - Implementar reportes de ejecución
