@@ -37,8 +37,8 @@ qa-api-testing/
 ├── .gitignore
 └── README.md
 ```
-``` powershell 
-▶️ Cómo ejecutar el proyecto
+## ▶️ Cómo ejecutar el proyecto
+``` powershell
 # Clonar el repositorio e ingresar al proyecto
 git clone https://github.com/Matiaslb14/qa-api-testing.git
 cd qa-api-testing
@@ -65,11 +65,11 @@ pytest
 - Los tests están diseñados para ser simples, legibles y fáciles de mantener.
 - La API simula la creación de recursos, por lo que los datos no se persisten realmente, comportamiento documentado como parte del testing.
 
-📊 Reportes / Evidencia (cuando aplique)
+## 📊 Reportes / Evidencia (cuando aplique)
 - La ejecución de los tests se valida mediante la salida estándar de Pytest.
 - No se incluyen evidencias visuales al tratarse de un proyecto de fundamentos de testing de APIs.
 
-📈 Mejoras futuras
+## 📈 Mejoras futuras
 - Agregar validaciones más profundas del contrato de la API
 - Separar tests por endpoint o funcionalidad
 - Implementar reportes de ejecución
