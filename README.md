@@ -62,7 +62,7 @@ pytest
 ## 🧠 Decisiones técnicas
 - Se utiliza **JSONPlaceholder** como API pública para simular un entorno real de pruebas.
 - Se validan tanto códigos de estado **HTTP** como el contenido de las respuestas.
-- Los tests están diseñados para ser simples, legibles y fáciles de mantener.
+- Los tests priorizan **legibilidad y mantenibilidad** por sobre complejidad innecesaria.
 - La API simula la creación de recursos, por lo que los datos no se persisten realmente, comportamiento documentado como parte del testing.
 
 ## 📊 Reportes / Evidencia (cuando aplique)
@@ -71,6 +71,5 @@ pytest
 
 ## 📈 Mejoras futuras
 - Agregar validaciones más profundas del contrato de la API
-- Separar tests por endpoint o funcionalidad
 - Implementar reportes de ejecución
 - Incorporar pruebas para métodos `PUT` y `DELETE`
